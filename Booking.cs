@@ -189,21 +189,21 @@ namespace MovieTime.Business
             string sql = "Insert INTO Booking values (@BookingId, @MovieName, @CustomerName, @PhoneNumber, @TotalSeats, @Date, @Showtime, @TotalPrice)";
 
             SqlParameter param1 = new SqlParameter("@BookingId", SqlDbType.Int);
-            param1.Value = BookingId;//order.CustName;
+            param1.Value = BookingId;
             SqlParameter param2 = new SqlParameter("@MovieName", SqlDbType.NChar);
-            param2.Value = MovieName;//order.BagType;
+            param2.Value = MovieName;
             SqlParameter param3 = new SqlParameter("@CustomerName", SqlDbType.NChar);
-            param3.Value = CustName;//order.Quantity;
+            param3.Value = CustName;
             SqlParameter param4 = new SqlParameter("@PhoneNumber", SqlDbType.NChar);
-            param4.Value = PhoneNum;//order.Iscustom;
+            param4.Value = PhoneNum;
             SqlParameter param5 = new SqlParameter("@TotalSeats", SqlDbType.Int);
-            param5.Value = TotalNumSeats;//order.CustomText;
+            param5.Value = TotalNumSeats;
             SqlParameter param6 = new SqlParameter("@Date", SqlDbType.Date);
-            param6.Value = Date;//order.TotCharge;
+            param6.Value = Date;
             SqlParameter param7 = new SqlParameter("@Showtime", SqlDbType.NVarChar);
-            param7.Value = ShowTime;//order.Id;
+            param7.Value = ShowTime;
             SqlParameter param8 = new SqlParameter("@TotalPrice", SqlDbType.Decimal);
-            param8.Value = Price;//order.Id;
+            param8.Value = Price;
 
 
             try
